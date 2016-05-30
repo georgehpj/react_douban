@@ -3,14 +3,14 @@
  */
 
 var React = require('react');
-var Logo = require('../picLink/logo');
+var Pic = require('../picLink/pic');
 var SearchBox = require('../others/searchBox');
 
 var WrapHead = React.createClass({
     render : function() {
         return (
             <div className="nav-wrap-head container">
-                <Logo className="nav-wrap-logo" href="https://movie.douban.com">豆瓣电影</Logo>
+                <Pic className="nav-wrap-logo" href="https://movie.douban.com"/>
                 <SearchBox/>
             </div>
         );

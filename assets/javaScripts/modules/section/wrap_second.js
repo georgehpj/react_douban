@@ -6,7 +6,6 @@ var InlineList = require('../list/inlineList');
 var WrapSecond = React.createClass({
     items : [
         <a className="small" href="#">影讯&购票</a>,
-        <a className="small" href="#">选电影</a>,
         <a className="small" href="#">电视剧</a>,
         <a className="small" href="#">排行榜</a>,
         <a className="small" href="#">分类</a>,

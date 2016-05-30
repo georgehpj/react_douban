@@ -2,7 +2,7 @@
  * Created by George on 2016/5/29.
  */
 var React = require('react');
-var Logo = React.createClass({
+var Pic = React.createClass({
     propTypes: {
         className:React.PropTypes.string.isRequired,
         hrefUrl:React.PropTypes.string
@@ -15,4 +15,4 @@ var Logo = React.createClass({
         );
     }
 });
-module.exports = Logo;
+module.exports = Pic;

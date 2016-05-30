@@ -18,7 +18,7 @@ var FooterNav = React.createClass({
 
     render : function(){
         return (
-            <nav className="navbar-default navbar-fixed-bottom" role="navigation">
+            <nav className="navbar-default" role="navigation">
                 <div className="navbar-right">
                     <InlineList className="nav navbar-nav">
                         {this.nav_right}

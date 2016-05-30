@@ -2,13 +2,14 @@ var path = require('path');
 var webpack = require('webpack');
 module.exports = {
     entry: [
+        'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
         'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
         './assets/javaScripts/index' // Your appʼs entry point
     ],
     output: {
-        path: path.join(__dirname, '/view/decodeJs'),
+        path: path.join(__dirname, '/view/dist'),
         filename: 'index.js',
-        publicPath:'/assets/'
+        publicPath:'/view/dist/'
     },
     resolve: {
         extensions: ['', '.js', '.jsx']
@@ -19,8 +20,5 @@ module.exports = {
             { test: /\.scss$/, loader: 'style!css!sass?sourceMap'},
             { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
         ]
-    },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ]
+    }
 }

@@ -1,3 +1,7 @@
+.db_header{
+  margin-bottom: 40px;
+}
+
 @media (max-width: 767px) {
   .nav-wrap {
     margin-top: 130px;
@@ -8,7 +12,6 @@
     margin-top: 50px;
   }
 }
-
 
 .nav-wrap {
   background: #f0f3f5;
@@ -22,6 +25,11 @@
       margin: 0 13px 0 0;
       float: left;
       line-height: 100em;
+      a{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
     }
     .nav-wrap-search {
       padding: 10px 0 15px 0;
@@ -34,12 +42,15 @@
   background: #f0f3f5;
   .nav-inline {
     padding-left: 0;
-    margin-left: -5px;
     list-style: none;
+    margin: 9px 0;
     li {
       display: inline-block;
       padding-right: 10px;
       padding-left: 10px;
+    }
+    li:first-child{
+      padding-left: 0;
     }
   }
 }

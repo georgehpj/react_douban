@@ -4,17 +4,15 @@
 
 var React = require('react');
 var FixedTopNav = require('../nav/fixedTopNav');
-var FooterNav = require('../nav/footerNav');
 var Wap = require('../section/wrap');
 
 var IndexHeader = React.createClass({
     render : function(){
         return (
-            <div>
+            <header className="db_header">
                 <FixedTopNav/>
                 <Wap/>
-                <FooterNav/>
-            </div>
+            </header>
         );
     }
 });
