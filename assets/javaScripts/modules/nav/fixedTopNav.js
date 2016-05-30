@@ -41,7 +41,6 @@ var FixedTopNav = React.createClass({
                 </div>
             </nav>
         );
-
     }
 });
 

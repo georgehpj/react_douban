@@ -7,6 +7,9 @@
 @media (min-width: 768px) {
   .nav-wrap {
     margin-top: 50px; } }
+.padding-left-zero {
+  padding-left: 0; }
+
 .nav-wrap {
   background: #f0f3f5;
   padding: 10px 0 5px;
@@ -38,5 +41,43 @@
       padding-left: 10px; }
     .nav-second .nav-inline li:first-child {
       padding-left: 0; }
+
+.ui-slide-control {
+  float: right;
+  margin: 5px 0 0 15px; }
+  .ui-slide-control .prev-btn a {
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background: url(../../images/slide_swithc_2.png) no-repeat;
+    background-position: 0 0;
+    margin-right: 5px; }
+  .ui-slide-control .next_btn a {
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    background: url(../../images/slide_swithc_2.png) no-repeat;
+    background-position: -18px 0;
+    margin-right: 5px; }
+
+.slide-tip {
+  float: right;
+  line-height: 30px;
+  color: #666; }
+
+.screening-hd h2 {
+  font: 15px Arial, Helvetica, sans-serif;
+  margin: 0 0 18px 0;
+  line-height: 150%;
+  color: #111;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea; }
+  .screening-hd h2 span {
+    margin-left: 15px;
+    font-size: 12px; }
 
 /*# sourceMappingURL=db_main.css.map */

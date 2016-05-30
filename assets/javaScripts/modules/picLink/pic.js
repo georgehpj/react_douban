@@ -9,9 +9,9 @@ var Pic = React.createClass({
     },
     render:function(){
         return(
-            <div className={this.props.className}>
+            <span className={this.props.className}>
                 <a href={this.props.href}>{this.props.children}</a>
-            </div>
+            </span>
         );
     }
 });

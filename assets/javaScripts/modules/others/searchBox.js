@@ -25,7 +25,7 @@ var SearchBox = React.createClass({
         return (
             <form className="input-group nav-wrap-search" onSubmit={this.submitHandler}>
                 <input type="text" placeholder="电影、影人、影院、电视剧"
-                       className="form-control"
+                       value={this.state.searchInfo} className="form-control"
                        onChange={this.handlerChange}/>
                 <span className="input-group-btn">
                     <button className="btn btn-default" type="submit">
