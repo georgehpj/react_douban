@@ -4,20 +4,35 @@
 
 var React = require('react');
 var SearchBox = React.createClass({
-    handlerClick : function () {
-        alert('button clicked!');
+    getInitialState : function(){
+        return {
+            searchInfo: ''
+        };
+    },
+
+    submitHandler : function (event) {
+        event.preventDefault();
+        alert(this.state.searchInfo);
+    },
+
+    handlerChange : function(event){
+        this.setState({
+            searchInfo : event.target.value
+        });
     },
 
     render: function () {
         return (
-            <div className="input-group nav-wrap-search">
-                <input type="text" className="form-control" placeholder="电影、影人、影院、电视剧"/>
+            <form className="input-group nav-wrap-search" onSubmit={this.submitHandler}>
+                <input type="text" placeholder="电影、影人、影院、电视剧"
+                       className="form-control"
+                       onChange={this.handlerChange}/>
                 <span className="input-group-btn">
-                    <button className="btn btn-default" type="button" onClick={this.handlerClick}>
+                    <button className="btn btn-default" type="submit">
                         <i className="glyphicon glyphicon-search"/>
                     </button>
                 </span>
-            </div>
+            </form>
         );
     }
 });
