@@ -14,10 +14,10 @@ var Body = React.createClass({
             <div>
                 <Header/>
                 <div className="container">
-                    <section className="col-lg-9 col-md-8 col-sm-12 padding-left-zero">
+                    <section className="col-lg-8 col-md-7 col-sm-12 padding-left-zero">
                         <ScreeningHeader/>
                     </section>
-                    <aside className="col-lg-3 col-md-4 col-sm-12 padding-left-zero">
+                    <aside className="col-lg-4 col-md-5 col-sm-12 padding-left-zero">
 
                     </aside>
                 </div>
